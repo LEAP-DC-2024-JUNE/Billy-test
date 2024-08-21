@@ -1,0 +1,27 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 10px;
+}
+
+/* .grid-item-1 {
+  background-color: black;
+  grid-row: 1/4;
+}
+
+.grid-item-2 {
+  background-color: yellow;
+  grid-column: 2/4;
+} */
+
+.box {
+  background-color: black;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.container {
+  grid-row: 1;
+  grid-column: 2;
+}
