@@ -1,12 +1,19 @@
-import Logo from "../icons/Logo";
-import Link from "next/link";
+import { ImageCategory } from "@/components/ImageCategory";
+import { ImageContainer } from "@/components/ImageContainer";
+import { SearchInput } from "@/components/SearchInput";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="text-center text-yellow-100">
-      <Link href={"/about"}>
-        <Logo />
-      </Link>
+    <div>
+      <h1>Snapshot</h1>
+      {/* Search section */}
+      <SearchInput />
+      {/* Category section */}
+      <ImageCategory />
+      {/* Image container section */}
+      <ImageContainer />
     </div>
   );
-}
+};
+
+export default Home;
