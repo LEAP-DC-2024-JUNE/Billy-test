@@ -27,3 +27,9 @@
 // sum(100, 200);
 // param1 -> 200
 // param2 -> 100
+const pow = 10;
+const limit = 1000;
+const str = "2 riin 10 zeregn 1000aas ih";
+
+console.log("2riin" + " " + pow + "zeregn" + " " + limit + "aas ih");
+console.log(`2riin ${pow} zeregn ${limit} aas ih`);
