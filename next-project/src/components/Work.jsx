@@ -2,27 +2,25 @@ import { WorkCard } from "./WorkCard";
 import UbCab from "../../public/Pic.png";
 import Mentorhub from "../../public/Pic1.png";
 import iToim from "../../public/snapscout.png";
+import { Button } from "./Experience";
 
 export const Work = () => {
+  const jobDescriptions = ["hi", 2, 3, 4];
   return (
     <div className="flex flex-col justify-center items-center">
-      <WorkCard
-        imgSrc={UbCab}
-        title="UBCab"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
-      />
+      <Button button={"Work"} />
+      {works.map((work, index) => {
+        return (
+          <WorkCard
+            imgSrc={work.imgSrc}
+            title={work.title}
+            description={work.description}
+            buttons={work.buttons}
+          />
+        );
+      })}
 
-      <WorkCard
-        title="Mentorhub"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
-        imgSrc={Mentorhub}
-        reverse={true}
-      />
-      <WorkCard
-        imgSrc={iToim}
-        title="iToim"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
-      />
+      {/* <ol> */}
     </div>
   );
 };

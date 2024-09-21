@@ -1,7 +1,14 @@
-import { Work } from "@/components/Work";
+import { useState } from "react";
 
 const Home = () => {
-  return <Work />;
+  const [isVisible, setIsVisible] = useState(false);
+  return (
+    <div>
+      {/* <StateComponent /> */}
+      <button onClick={() => setIsVisible(!isVisible)}>CLick</button>
+      {isVisible && <MobileMenu />}
+    </div>
+  );
 };
 
 export default Home;
